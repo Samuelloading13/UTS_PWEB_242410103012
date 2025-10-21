@@ -7,55 +7,61 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# UTS PWEB GENAP 25/26 - Mini Proyek Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Proyek ini dibuat untuk memenuhi Ujian Tengah Semester (UTS) mata kuliah Pemrograman Web. Proyek ini merupakan aplikasi web sederhana yang dibangun menggunakan *framework* Laravel murni, fokus pada implementasi dasar *routing*, *controller*, dan *Blade template engine* tanpa menggunakan *database*.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Nama:** `Samuel Gurning`
+- **NIM:** `242410103012`
+- **Kelas:** `A IF`
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🚀 Fitur Utama
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Proyek ini mengimplementasikan semua fungsionalitas yang disyaratkan dalam dokumen soal UTS:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1.  **Halaman Login:**
+    * Form login sederhana dengan input `username` dan `password`.
+    * Mengirimkan data `username` ke halaman Dashboard menggunakan *query parameter* (`?username=...`) setelah *submit*.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+2.  **Halaman Dashboard:**
+    * Menampilkan pesan selamat datang yang dinamis, mengambil nama dari *query parameter* di URL.
 
-## Laravel Sponsors
+3.  **Halaman Pengelolaan:**
+    * Menampilkan daftar data (Inventaris Barang) yang bersumber dari *array* di dalam `PageController`.
+    * Data ditampilkan dalam tabel yang responsif (bisa di-*scroll* horizontal di layar kecil).
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+4.  **Halaman Profile:**
+    * Menampilkan detail profil statis dan dinamis.
+    * Data `username` diambil dari *query parameter* di URL, sama seperti Dashboard.
 
-### Premium Partners
+5.  **Struktur Blade Lengkap:**
+    * Menggunakan *layout master* (`layouts/app.blade.php`).
+    * Mengimplementasikan `@extends`, `@section`, dan `@yield` untuk struktur halaman.
+    * Menggunakan `@include` untuk memanggil *partial* (judul halaman).
+    * Menggunakan *Blade Component* (`x-navbar` dan `x-footer`) untuk elemen yang dapat digunakan kembali.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+6.  **Desain Responsif:**
+    * Tampilan dirancang agar tetap rapi dan fungsional di perangkat *desktop* maupun *mobile* (ponsel).
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🛠️ Teknologi yang Digunakan
 
-## Code of Conduct
+-   **Framework:** Laravel (Disarankan Laravel 11)
+-   **Bahasa:** PHP 8+
+-   **Frontend:**
+    -   HTML5
+    -   CSS3 (Native, menggunakan Flexbox dan Media Queries untuk responsivitas)
+-   **Template Engine:** Blade
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## ⚙️ Cara Menjalankan Proyek
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Proyek ini tidak memerlukan konfigurasi *database*.
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1.  **Clone repositori ini:**
+    ```bash
+    git clone
