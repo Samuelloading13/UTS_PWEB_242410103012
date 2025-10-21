@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f7f6;
+    color: #333;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar a {
+    display: block;
+    color: #555;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.navbar a:hover {
+    background-color: #f8f9fa;
+    color: #0056b3;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.navbar a.logout {
+    background-color: #d9534f;
+    color: white;
+    border-radius: 5px;
+}
+.navbar a.logout:hover {
+    background-color: #c9302c;
+}
+
+.page-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 5%;
+    text-align: center;
+}
+.page-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 25px;
+    max-width: 1100px;
+    margin: 25px auto;
+    width: 90%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/* login */
+.login-body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+.login-container {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+.login-container h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+.login-form div {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.login-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.login-form button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* penngelolaan */
+.table-container {
+    overflow-x: auto;
+}
+.data-table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.data-table th,
+.data-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+.data-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+}
+.data-table tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+.data-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* profile */
+.profile-card {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 25px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.profile-card h2 {
+    margin-top: 0;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+.profile-item {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+.profile-item label {
+    font-weight: 600;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+.profile-item span {
+    color: #333;
+    background-color: #fff;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: block;
+}
+
+/* rensponsif */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .nav-links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-logout {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .navbar a {
+        text-align: center;
+    }
+
+    .main-content {
+        width: 95%;
+        padding: 15px;
+        margin: 15px auto;
+    }
+    .page-header {
+        padding: 15px;
+    }
+    .page-header h1 {
+        font-size: 20px;
+    }
+}
