@@ -57,11 +57,3 @@ Proyek ini mengimplementasikan semua fungsionalitas yang disyaratkan dalam dokum
 -   **Template Engine:** Blade
 
 ---
-
-## ⚙️ Cara Menjalankan Proyek
-
-Proyek ini tidak memerlukan konfigurasi *database*.
-
-1.  **Clone repositori ini:**
-    ```bash
-    git clone
